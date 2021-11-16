@@ -1,0 +1,41 @@
+.app {
+    &__nav {
+        margin-bottom: 30px;
+    }
+
+    &__nav-list{
+        display: flex;
+    }
+
+    &__nav-list-item {
+        a {
+            color: inherit;
+            font-weight: 400;
+            font-size: 12px;
+        }
+
+        a:hover {
+            text-shadow: 0 0 15px;
+            transition: all .3s;
+        }
+    }
+
+    &__nav-list-item:not(:last-child) {
+        margin-right: 40px;
+    }
+
+    &__nav-list-item:first-child {
+        position: relative;
+    } 
+    
+    &__nav-list-item:first-child::before {
+        position: absolute;
+        top: -15px;
+        left: -35px;
+        display: block;
+        width: 35px;
+        height: 35px;
+        background-image: url('../../resources/img/nav-logo.svg');
+        content: '';
+    }
+}

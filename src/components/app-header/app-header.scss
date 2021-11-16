@@ -1,44 +1,13 @@
 .app{
     &__header{
+        width: 100%;
         min-height: 260px;
         padding: 52px 180px;
         background-color: grey;
         background-image: url('../../resources/img/coffee-shop-header.png');
         background-repeat: no-repeat;
         background-size: cover;
-    }
-
-    &__list{
-        display: flex;
-    }
-
-    &__list-item {
-        margin-right: 40px;
-
-        a {
-            color: #fff;
-            font-weight: 400;
-            font-size: 12px;
-        }
-
-        a:hover {
-           color: orange;
-        }
-    }
-
-    &__list-item:first-child {
-        position: relative;
-    } 
-
-    &__list-item:first-child::before{
-        position: absolute;
-        top: -15px;
-        left: -35px;
-        display: block;
-        width: 35px;
-        height: 35px;
-        background-image: url('../../resources/img/logo.png');
-        content: '';
+        color:#fff;
     }
 
     &__header-title {
@@ -48,4 +17,8 @@
         font-weight: 700;
         font-size: 40px;
     }
+}
+
+a {
+    color:#fff;
 }
